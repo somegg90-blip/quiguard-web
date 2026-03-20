@@ -62,7 +62,7 @@ export default function Home() {
 
         <div className="mt-20 relative w-full max-w-5xl mx-auto h-80 rounded-xl border border-white/10 glass-card overflow-hidden">
              <div className="absolute inset-0 flex items-center justify-center opacity-50">
-                <div className="w-32 h-32 border border-electric/50 rounded-full animate-spin flex items-center justify-center" style={{animationDuration: "10s"}}>
+                <div className="w-32 h-32 border border-electric/50 rounded-full animate-spin flex items-center justify-center" style={{animationDuration: "3s"}}>
                     <Shield className="w-12 h-12 text-electric" />
                 </div>
              </div>
