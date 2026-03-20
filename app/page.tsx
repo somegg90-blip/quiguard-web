@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/Button";
 import { Card } from "@/components/ui/Card";
-import { Shield, Zap, Lock, ArrowRight, Github } from "lucide-react";
+import { Shield, Zap, Lock, ArrowRight, Github, Database, Ban } from "lucide-react";
 import Link from "next/link";
 
 export default function Home() {
@@ -22,9 +22,7 @@ export default function Home() {
           </div>
           <div className="flex items-center gap-4">
             <Link href="https://github.com/somegg90-blip/ironlayer-gateway" target="_blank">
-              <Button variant="ghost" className="p-2">
-                <Github className="w-5 h-5" />
-              </Button>
+              <Button variant="ghost" className="p-2"><Github className="w-5 h-5" /></Button>
             </Link>
             <Link href="/contact"><Button variant="secondary">Contact Sales</Button></Link>
           </div>
@@ -35,16 +33,16 @@ export default function Home() {
         <div className="max-w-4xl mx-auto text-center relative z-10">
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-electric/20 bg-electric/5 text-electric text-xs font-medium mb-8 animate-pulse-slow">
             <span className="w-2 h-2 rounded-full bg-electric animate-ping" />
-            V2 is Live: Smart Routing & Agent Guardrails
+            V1.0 Launched: Agent Tool Scrubbing & Audit Logs
           </div>
           
           <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight tracking-tight">
-            The Security Layer <br/>
-            <span className="gradient-text">For Generative AI.</span>
+            The Safety Layer <br/>
+            <span className="gradient-text">For AI Agents.</span>
           </h1>
           
           <p className="text-lg md:text-xl text-platinum/60 max-w-2xl mx-auto mb-10 leading-relaxed">
-            An enterprise-grade API gateway that redacts PII, enforces policies, and prevents data leaks before they reach external LLMs.
+            The self-hosted security proxy that scrubs PII from prompts, responses, and tool calls. Protect your data before it leaves your network.
           </p>
           
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
@@ -75,27 +73,27 @@ export default function Home() {
       <section className="py-24 px-6">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">Enterprise Security, Developer Experience</h2>
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">Security Infrastructure for the AI Era</h2>
             <p className="text-platinum/60 max-w-xl mx-auto">
-              Plug-and-play security infrastructure that scales with your AI operations.
+              Built for developers. Ready for enterprise compliance.
             </p>
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             <Card 
               icon={<Lock className="w-6 h-6" />}
-              title="PII & IP Scrubbing"
-              description="Automatically detect and redact emails, credit cards, and custom project names using context-aware analysis."
+              title="Prompt & Tool Scrubbing"
+              description="Redacts PII in user prompts AND Agent tool arguments. The only solution that secures the entire loop."
             />
             <Card 
               icon={<Shield className="w-6 h-6" />}
               title="Agent Guardrails"
-              description="Block dangerous actions and data exfiltration. Prevent 'Prompt Injection' attacks before they happen."
+              description="Enforce hard boundaries. Block dangerous actions (DROP TABLE) and prevent data exfiltration to unauthorized domains."
             />
             <Card 
-              icon={<Zap className="w-6 h-6" />}
-              title="Smart Routing"
-              description="Automatically route complex queries to powerful models and simple tasks to fast ones to optimize costs."
+              icon={<Database className="w-6 h-6" />}
+              title="Audit Logs & Modes"
+              description="Generate compliance-ready audit trails. Switch between Mask, Warn, or Block modes to fit your risk tolerance."
             />
           </div>
         </div>
@@ -107,12 +105,8 @@ export default function Home() {
           <h2 className="text-3xl font-bold mb-4">Ready to secure your AI stack?</h2>
           <p className="text-platinum/60 mb-8">Get started with the open-source core or schedule a pilot for your team.</p>
           <div className="flex flex-col sm:flex-row justify-center gap-4">
-            <Link href="/pricing">
-              <Button variant="primary" className="px-8">View Pricing</Button>
-            </Link>
-            <Link href="/contact">
-              <Button variant="ghost" className="px-8">Contact Us</Button>
-            </Link>
+            <Link href="/pricing"><Button variant="primary" className="px-8">View Pricing</Button></Link>
+            <Link href="/contact"><Button variant="ghost" className="px-8">Contact Us</Button></Link>
           </div>
         </div>
       </section>

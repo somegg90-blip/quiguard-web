@@ -29,7 +29,6 @@ export default function PricingPage() {
           <h1 className="text-4xl font-bold mb-4 gradient-text">Simple Pricing</h1>
           <p className="text-platinum/60">Open Source Core. Enterprise Scale.</p>
         </div>
-
         <div className="grid md:grid-cols-2 gap-8">
           {tiers.map((tier) => (
             <div key={tier.name} className={`glass-card p-8 rounded-xl ${tier.featured ? 'border-electric/50' : ''}`}>
@@ -46,9 +45,7 @@ export default function PricingPage() {
                 ))}
               </ul>
               <a href={tier.link} target={tier.link.startsWith('http') ? "_blank" : ""}>
-                <Button variant={tier.featured ? "primary" : "secondary"} className="w-full">
-                  {tier.cta}
-                </Button>
+                <Button variant={tier.featured ? "primary" : "secondary"} className="w-full">{tier.cta}</Button>
               </a>
             </div>
           ))}
