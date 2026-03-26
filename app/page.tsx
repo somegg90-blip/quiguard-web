@@ -143,30 +143,6 @@ export default function Home() {
         <div className="absolute top-0 left-1/4 w-96 h-96 bg-electric/10 rounded-full blur-3xl opacity-30 pointer-events-none" />
         <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-indigo-deep/10 rounded-full blur-3xl opacity-30 pointer-events-none" />
 
-        {/* Navigation */}
-        <nav className="fixed top-0 left-0 right-0 z-50 glass-card border-b border-white/5" role="navigation" aria-label="Main navigation">
-          <div className="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
-            <div className="flex items-center gap-2 text-xl font-bold" itemProp="brand" itemScope itemType="https://schema.org/Organization">
-              <Shield className="w-6 h-6 text-electric" aria-hidden="true" />
-              <span itemProp="name">QuiGuard</span>
-              <meta itemProp="url" content="https://QuiGuard.dev" />
-            </div>
-            <div className="hidden md:flex items-center gap-8 text-sm text-platinum/70">
-              <Link href="#features" className="hover:text-platinum transition-colors" aria-label="View QuiGuard features">Features</Link>
-              <Link href="#architecture" className="hover:text-platinum transition-colors" aria-label="Learn about QuiGuard security architecture">Architecture</Link>
-              <Link href="#faq" className="hover:text-platinum transition-colors" aria-label="View frequently asked questions">FAQ</Link>
-              <Link href="/pricing" className="hover:text-platinum transition-colors" aria-label="View QuiGuard pricing plans">Pricing</Link>
-              <Link href="/docs" className="hover:text-platinum transition-colors" aria-label="Read QuiGuard documentation">Docs</Link>
-            </div>
-            <div className="flex items-center gap-4">
-              <Link href="https://github.com/somegg90-blip/QuiGuard-gateway" target="_blank" rel="noopener noreferrer" aria-label="View QuiGuard on GitHub">
-                <Button variant="ghost" className="p-2"><Github className="w-5 h-5" /></Button>
-              </Link>
-              <Link href="/contact"><Button variant="secondary" aria-label="Contact QuiGuard sales team">Contact Sales</Button></Link>
-            </div>
-          </div>
-        </nav>
-
         {/* Hero Section - AEO Optimized */}
         <section className="pt-40 pb-20 px-6 relative overflow-hidden" aria-labelledby="hero-heading">
           <div className="max-w-4xl mx-auto text-center relative z-10">

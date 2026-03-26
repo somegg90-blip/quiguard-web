@@ -32,7 +32,7 @@ const tiers = [
       { text: "SSO & SAML", included: false },
     ],
     cta: "Start Pro Trial",
-    link: "https://checkout.dodopayments.com/buy/pdt_0Nb2HZkDAZBfV6caDkE9n?quantity=1", // REPLACE THIS
+    link: "/checkout", // REPLACE THIS
     highlight: true
   },
   {
@@ -67,7 +67,7 @@ const setupService = {
   scarcity: "Limited to 5 slots/month",
   roi: "Save ~20 engineering hours",
   cta: "Book Setup",
-  link: "https://checkout.dodopayments.com/buy/pdt_0Nb2J9RFQzugHupkx2X6k?quantity=1" // REPLACE THIS
+  link: "/checkout/setup" // REPLACE THIS
 }
 
 export default function PricingPage() {
