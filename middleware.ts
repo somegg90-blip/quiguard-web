@@ -41,6 +41,7 @@ export async function middleware(request: NextRequest) {
   // ============================================================
   const protectedRoutes = [
     '/dashboard',       // Audit logs dashboard (sensitive data)
+    '/settings',        // API keys & subscription management
     '/checkout',        // Payment / subscription management
   ]
 

@@ -191,7 +191,7 @@ const setupService = {
   name: "Pilot Setup",
   price: "$350",
   originalPrice: "$500",
-  discount: "40% launch discount",
+  discount: "30% launch discount",
   period: "One-time",
   description: "Fast-track your deployment with hands-on expert help. Perfect for teams that want to ship QuiGuard in hours, not weeks.",
   features: [
@@ -205,7 +205,7 @@ const setupService = {
   scarcity: "Limited to 10 slots/month",
   roi: "Save ~20 engineering hours",
   cta: "Book Setup",
-  link: "/checkout/Setup",
+  link: "/checkout/setup",
 }
 
 // ---- Comparison Categories ----
